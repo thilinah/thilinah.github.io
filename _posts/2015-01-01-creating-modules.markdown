@@ -2,6 +2,7 @@
 layout: post
 title: Creating Modules
 description: Thriller Comedy Horror
+image: https://gamonoid-public.s3.amazonaws.com/thilinah.github.io/Screen%20Shot%202015-08-02%20at%202.19.15%20PM.png
 ---
 
 There are two types of modules in IceFramework.
@@ -25,7 +26,29 @@ Lets assume the module is an admin module (so it should be inside ext/admin dire
 
 ##meta.json
 
-{% gist 8b8aa02c917aadf6a6be %}
+{% highlight json %}
+{
+"label":"Projects/Client Setup",
+"menu":"Admin",
+"order":"5",
+"icon":"fa-list-alt",
+"user_levels":["Admin","Manager"],
+
+"permissions":
+	{
+		"Manager":{
+			"Add Projects":"Yes",
+			"Edit Projects":"Yes",
+			"Delete Projects":"No",
+			"Add Clients":"Yes",
+			"Edit Clients":"Yes",
+			"Delete Clients":"No"
+		}
+	}	
+}
+
+{% endhighlight %}
+
 
  - **label** is the name of the menu item
  - **menu** is the name of the group of menus that this module will belong to
