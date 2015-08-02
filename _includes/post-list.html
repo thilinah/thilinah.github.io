@@ -3,12 +3,6 @@
         <li>
             <a href='{{ post.url }}'><aside class="dates">{{ post.date | date:"%b %d" }}</aside></a>
             <a href='{{ post.url }}'>{{ post.title }} <h2>{{ post.description }}</h2></a>
-            <br/>
-            {% if post.image %}
-            <a href='{{ post.url }}'>
-            <img href='{{ post.image }}' style="max-width:900px;"/>
-            </a>
-            {% endif %}
         </li>
     {% endfor %}
 </ul>
