@@ -36,7 +36,57 @@ Lets assume the module is an admin module (so it should be inside ext/admin dire
 
 ##ProjectsAdminManager.php
 
-{% gist a4835dd626b8e59a7475 %}
+{% highlight php %}
+if (!class_exists('ProjectsAdminManager')) {
+	class ProjectsAdminManager extends AbstractModuleManager{
+		public function initializeUserClasses(){
+				
+		}
+		public function initializeFieldMappings(){
+				
+		}
+		public function initializeDatabaseErrorMappings(){
+		}
+		public function setupModuleClassDefinitions(){
+			
+			$this->addModelClass('Client');
+			$this->addModelClass('Project');
+				
+		}
+	}
+}
+if (!class_exists('Client')) {
+	class Client extends ICEHRM_Record {
+		var $_table = 'Clients';
+		public function getAdminAccess(){
+			return array("get","element","save","delete");
+		}
+		public function getManagerAccess(){
+			return array("get","element","save","delete");
+		}
+		public function getUserAccess(){
+			return array();
+		}
+	}
+}
+	
+if (!class_exists('Project')) {
+	class Project extends ICEHRM_Record {
+		var $_table = 'Projects';
+		public function getAdminAccess(){
+			return array("get","element","save","delete");
+		}
+		public function getManagerAccess(){
+			return array("get","element","save","delete");
+		}
+		public function getUserAccess(){
+			return array("get","element");
+		}
+	}
+}
+view raw
+{% endhighlight %}
+
 
 This file defines model classes and other controlling aspects for the module. Ice-framework uses AdoDB Active record as the ORM layer. So all model classes should extend **ICEHRM_Record** class which extends the **ADOdb_Active_Record** class.
 
