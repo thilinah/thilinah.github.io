@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Getting Started with AWS Dynamo DB
-description: A Quick Getting Started Guide to AWS Dynamo DB
+title: Getting Started with AWS Dynamo DB with PHP
+description: A Quick Getting Started Guide to AWS Dynamo DB with PHP
 ---
 
 ### Dynamo DB Local tool
-For testing Dynamo DB the only two options available is using an AWS account to do the testing or downloading local Dynamo DB tool. The latest tool
-can be downloaded from:
+For testing Dynamo DB, download local testing tool from:
 
-*<a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html">http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html</a>*
+*<a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html" target="_blank">http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html</a>*
+
+Note that this is not a replacement for DynamoDB and should not be used in a live application.
 
 For running the tool execute following command (note that you need to have JRE installed), after changing the path *'/root/DynamoDBServer/'* accordingly
 
@@ -18,3 +19,6 @@ Usually local tool uses the port 8000. Also you can access the web application f
 
 ![AWS Local tool Shell](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/shell-main.png "AWS Local tool Shell")
 
+
+
+** Not completed yet .. **
