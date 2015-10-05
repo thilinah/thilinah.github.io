@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with AWS Dynamo DB with PHP
+title: Getting Started with AWS Dynamo DB and PHP
 description: A Quick Getting Started Guide to AWS Dynamo DB with PHP
 ---
 
