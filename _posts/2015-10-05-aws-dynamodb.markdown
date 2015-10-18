@@ -20,5 +20,15 @@ Usually local tool uses the port 8000. Also you can access the web application f
 ![AWS Local tool Shell](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/shell-main.png "AWS Local tool Shell")
 
 
+### Dynamo DB client library
+
+First step is to download the Dynamo DB PHP client library is a part of AWS sdk. It can be downloaded through composer or
+from [https://github.com/aws/aws-sdk-php](https://github.com/aws/aws-sdk-php)
+
+
+### Connecting to Dynamo DB local from PHP
+
+
+
 
 ** Not completed yet .. **
