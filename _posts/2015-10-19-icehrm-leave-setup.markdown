@@ -15,7 +15,8 @@ Let's assume following:
 2. Some of your employees have leaves carried forwarded from 2014, which might not have been used
 3. Your company have annual leave which can be carried forwarded to next year
 4. Company supported casual leave which are accrued 1.5 per each month
-5. Some employees have joined in 2015 and there leaves should be proportionate according to joined date
+5. Some employees have joined in 2015 and their leaves should be proportionate according to joined date
+
 
 
 ### Setting up leave periods
